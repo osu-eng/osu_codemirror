@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_wysiwyg_settings_alter().
+ *
+ * This adds in the codemirror plugin to CKEditor: http://ckeditor.com/addon/codemirror.
+ */
+function osu_codemirror_wysiwyg_editor_settings_alter(&$settings, $context) {
+  if ($context['profile']->editor == 'ckeditor') {
+    if (isset($settings['extraPlugins'])) {
+      $settings['extraPlugins'] .= ',codemirror';
+    }
+    else {
+      $settings['extraPlugins'] = 'codemirror';
+    }
+  }
+}

@@ -1,0 +1,5 @@
+name = OSU Codemirror
+description = Codemirror plugin for CKEditor.
+core = 7.x
+package = OSU
+dependencies[] = wysiwyg
