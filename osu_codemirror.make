@@ -1,3 +1,6 @@
+api = 2
+core = 7.x
+
 ; CKEditor Plugins CodeMirror (HTML Highlighting)
 libraries[codemirror][download][type]= "get"
 libraries[codemirror][download][url] = "http://download.ckeditor.com/codemirror/releases/codemirror_1.06.zip"
